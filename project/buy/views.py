@@ -9,7 +9,6 @@ stripe.api_key = settings.STRIPE_SECRET_KEY
 
 
 def checkout(request, item_id):
-    print(Item.objects.get(id=item_id))
     name = Item.objects.get(id=item_id).name
     price = Item.objects.get(id=item_id).price
 
