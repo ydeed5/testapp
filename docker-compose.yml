@@ -7,8 +7,4 @@ services:
     ports:
       - "8000:8000"
     environment:
-      - POSTGRES_NAME=postgres
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
-    environment:
       - STRIPE_SECRET_KEY=$STRIPE_SECRET_KEY
