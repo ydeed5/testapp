@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="card text-bg-light mb-3" style="max-width: 40rem;">
+        <div class="card-header">
+            {{ item.name }}
+        </div>
+        <div class="card-body">
+            <p class="card-text">
+                {{ item.description }}
+            </p>
+        </div>
+        <div class="card-body">
+            {{ item.price }} $
+        </div>
+
+        <div class="card-footer">
+            <form action="/buy/{{ item.id }}/" method="POST">
+                {% csrf_token %}
+                <button type="submit">Checkout</button>
+              </form>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
