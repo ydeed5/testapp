@@ -13,6 +13,7 @@ a) docker:
 ```python
 sudo docker-compose up --build
 ```
+
 или
 
 b) обычный python:
