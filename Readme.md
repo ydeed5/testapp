@@ -1,6 +1,6 @@
 Админка: admin/admin
 
-Редирект на оплату идет сразу из модели, как написано здесь: https://stripe.com/docs/checkout/quickstart ("Prebuilt Checkout page").
+Редирект на оплату идет сразу из функции checkout (buy/views), как написано здесь: https://stripe.com/docs/checkout/quickstart ("Prebuilt Checkout page").
 
 ## Копируем
 ```python
