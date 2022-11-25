@@ -18,7 +18,7 @@ sudo docker-compose up --build
 b) обычный python:
 ```python
 pip install -i requirements.txt
-./manage.py runserver
+python project/manage.py runserver
 ```
 (venv загружать не стал)
 
